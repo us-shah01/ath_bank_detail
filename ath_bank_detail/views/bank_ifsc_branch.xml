@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="view_res_bank_form">
+        <field name="name">res.bank.form</field>
+        <field name="model">res.bank</field>
+        <field name="inherit_id" ref="base.view_res_bank_form"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="ifsc_code"/>
+                <field name="branch_name"/>
+            </field>
+
+            <xpath expr="//form" position="inside">
+                <chatter reload_on_attachment="True"/>
+            </xpath>
+
+            <!--            <xpath expr="//form" position="inside">-->
+            <!--                <div class="oe_chatter">-->
+            <!--                    <field name="message_follower_ids" widget="mail_followers"/>-->
+            <!--                    <field name="activity_ids"/>-->
+            <!--                    <field name="message_ids" widget="mail_thread"/>-->
+            <!--                </div>-->
+            <!--            </xpath>-->
+
+
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_res_bank_tree">
+        <field name="name">bank.bank.list</field>
+        <field name="model">res.bank</field>
+        <field name="inherit_id" ref="base.view_res_bank_tree"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="branch_name"/>
+                <field name="ifsc_code"/>
+            </field>
+            <field name="country" position="before">
+                <field name="city" optional="hide"/>
+                <field name="state" optional="hide" string="State"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>
