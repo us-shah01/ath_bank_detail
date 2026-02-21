@@ -8,10 +8,12 @@
     'data': [
         'views/bank_ifsc_branch.xml',
     ],
+    'image':['static/description/cover.png',
+             'static/description/icon.png'
+             ],
     'license': 'OPL-1',
     'installable': True,
     'application': True,
+    'price': 20,
+    'currency': 'USD',
 }
-
-
-
