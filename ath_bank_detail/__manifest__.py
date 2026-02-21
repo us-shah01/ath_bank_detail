@@ -8,7 +8,7 @@
     'data': [
         'views/bank_ifsc_branch.xml',
     ],
-    'image':['static/description/cover.png',
+    'images':['static/description/cover.png',
              'static/description/icon.png'
              ],
     'license': 'OPL-1',
@@ -17,3 +17,4 @@
     'price': 20,
     'currency': 'USD',
 }
+
