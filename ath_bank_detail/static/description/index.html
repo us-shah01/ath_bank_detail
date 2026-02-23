@@ -1,146 +1,176 @@
 <section style="font-family: Arial, Helvetica, sans-serif; background:#ffffff;">
 
-    <!-- HERO HEADER -->
-    <div style="background:#2b458e; padding:60px 20px; text-align:center; color:#ffffff;">
-        <h1 style="margin:0; font-size:34px; font-weight:600;">
+    <!-- HERO SECTION -->
+    <div style="background:#2b458e; padding:70px 20px; text-align:center; color:#ffffff;">
+        <h1 style="margin:0; font-size:36px; font-weight:600;">
             Branch & IFSC Management for Odoo
         </h1>
-        <div style="width:100px; height:4px; background:#f47216; margin:25px auto;"></div>
-        <p style="max-width:800px; margin:auto; font-size:16px; line-height:1.8;">
-            Structured banking master enhancement with enforced IFSC uniqueness,
-            branch-level clarity, and full audit traceability.
+
+        <div style="width:110px; height:4px; background:#f47216; margin:25px auto;"></div>
+
+        <p style="max-width:900px; margin:auto; font-size:17px; line-height:1.9;">
+            Enterprise-grade Banking Master Enhancement with structured branch control,
+            enforced IFSC uniqueness, audit traceability, and financial data governance.
         </p>
     </div>
 
 
-    <!-- OVERVIEW -->
-    <div style="max-width:1100px; margin:auto; padding:60px 20px;">
-        <h2 style="color:#2b458e; font-size:26px; margin-bottom:20px;">
-            Overview
+    <!-- EXECUTIVE OVERVIEW -->
+    <div style="max-width:1150px; margin:auto; padding:70px 20px;">
+        <h2 style="color:#2b458e; font-size:28px; margin-bottom:25px;">
+            Executive Overview
         </h2>
 
-        <p style="font-size:16px; color:#333333; line-height:1.9;">
-            This module extends the standard <strong>res.bank</strong> model to introduce
-            structured Branch-level management and enforce IFSC Code uniqueness at the database level.
+        <p style="font-size:16px; color:#333; line-height:1.9;">
+            This module transforms Odoo’s default Bank model into a structured,
+            compliance-ready banking registry. It introduces mandatory branch-level
+            classification, enforces IFSC Code uniqueness at the database level,
+            and enables full audit visibility through Odoo’s tracking framework.
         </p>
 
-        <p style="font-size:16px; color:#333333; line-height:1.9;">
-            Designed for enterprises that require strong financial data governance,
-            compliance readiness, and improved operational clarity across departments.
+        <p style="font-size:16px; color:#333; line-height:1.9;">
+            Built for enterprises handling high-volume financial transactions,
+            multi-branch banking structures, and compliance-sensitive operations.
         </p>
+    </div>
+
+
+    <!-- VALUE PROPOSITION BAND -->
+    <div style="background:#f4f7fc; padding:70px 20px;">
+        <div style="max-width:1150px; margin:auto; text-align:center;">
+
+            <h2 style="color:#2b458e; font-size:28px;">
+                Strategic Value
+            </h2>
+
+            <div style="width:100px; height:3px; background:#f47216; margin:20px auto 50px;"></div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:50px;">
+
+                <div style="flex:1; min-width:250px;">
+                    <h3 style="color:#2b458e;">Compliance Assurance</h3>
+                    <p style="line-height:1.9; color:#333;">
+                        Prevent duplicate IFSC entries and maintain clean,
+                        audit-ready banking master data.
+                    </p>
+                </div>
+
+                <div style="flex:1; min-width:250px;">
+                    <h3 style="color:#2b458e;">Governance Control</h3>
+                    <p style="line-height:1.9; color:#333;">
+                        Structured branch identification improves reporting,
+                        reconciliation, and financial transparency.
+                    </p>
+                </div>
+
+                <div style="flex:1; min-width:250px;">
+                    <h3 style="color:#2b458e;">Operational Stability</h3>
+                    <p style="line-height:1.9; color:#333;">
+                        Eliminates manual inconsistencies and strengthens system reliability.
+                    </p>
+                </div>
+
+            </div>
+        </div>
     </div>
 
 
     <!-- CORE CAPABILITIES -->
-    <div style="background:#f4f7fc; padding:60px 20px;">
-        <div style="max-width:1100px; margin:auto;">
-            <h2 style="color:#2b458e; font-size:26px; text-align:center;">
-                Core Capabilities
-            </h2>
-            <div style="width:90px; height:3px; background:#f47216; margin:20px auto 50px;"></div>
+    <div style="max-width:1150px; margin:auto; padding:70px 20px;">
+        <h2 style="color:#2b458e; font-size:28px; text-align:center;">
+            Core Capabilities
+        </h2>
 
-            <div style="display:flex; flex-wrap:wrap; gap:40px;">
+        <div style="width:100px; height:3px; background:#f47216; margin:20px auto 60px;"></div>
 
-                <div style="flex:1; min-width:280px; background:#ffffff; padding:30px; border-radius:8px; box-shadow:0 5px 20px rgba(0,0,0,0.05);">
-                    <h3 style="color:#2b458e; margin-top:0;">Data Integrity</h3>
-                    <ul style="line-height:2; color:#333;">
-                        <li>Unique IFSC Code enforcement (SQL constraint)</li>
-                        <li>Mandatory Branch Name</li>
-                        <li>Prevents duplicate banking entries</li>
-                    </ul>
-                </div>
+        <div style="display:flex; flex-wrap:wrap; gap:40px;">
 
-                <div style="flex:1; min-width:280px; background:#ffffff; padding:30px; border-radius:8px; box-shadow:0 5px 20px rgba(0,0,0,0.05);">
-                    <h3 style="color:#2b458e; margin-top:0;">Smart Display Logic</h3>
-                    <ul style="line-height:2; color:#333;">
-                        <li>Auto-generated structured Display Name</li>
-                        <li>Format: Bank (Branch) - IFSC</li>
-                        <li>Improved reporting & search efficiency</li>
-                    </ul>
-                </div>
-
-                <div style="flex:1; min-width:280px; background:#ffffff; padding:30px; border-radius:8px; box-shadow:0 5px 20px rgba(0,0,0,0.05);">
-                    <h3 style="color:#2b458e; margin-top:0;">Audit & Traceability</h3>
-                    <ul style="line-height:2; color:#333;">
-                        <li>Chatter integration</li>
-                        <li>Field-level tracking enabled</li>
-                        <li>Activity management support</li>
-                    </ul>
-                </div>
-
+            <div style="flex:1; min-width:280px; background:#ffffff; padding:35px; border-radius:10px; box-shadow:0 8px 30px rgba(0,0,0,0.06);">
+                <h3 style="color:#2b458e; margin-top:0;">Database-Level Integrity</h3>
+                <ul style="line-height:2; color:#333;">
+                    <li>Unique IFSC SQL constraint</li>
+                    <li>Mandatory Branch Name enforcement</li>
+                    <li>Duplicate prevention mechanism</li>
+                </ul>
             </div>
+
+            <div style="flex:1; min-width:280px; background:#ffffff; padding:35px; border-radius:10px; box-shadow:0 8px 30px rgba(0,0,0,0.06);">
+                <h3 style="color:#2b458e; margin-top:0;">Structured Display Logic</h3>
+                <ul style="line-height:2; color:#333;">
+                    <li>Computed Display Name</li>
+                    <li>Format: Bank (Branch) - IFSC</li>
+                    <li>Enhanced search & reporting clarity</li>
+                </ul>
+            </div>
+
+            <div style="flex:1; min-width:280px; background:#ffffff; padding:35px; border-radius:10px; box-shadow:0 8px 30px rgba(0,0,0,0.06);">
+                <h3 style="color:#2b458e; margin-top:0;">Full Audit Traceability</h3>
+                <ul style="line-height:2; color:#333;">
+                    <li>Mail thread integration</li>
+                    <li>Activity mixin support</li>
+                    <li>Field-level tracking enabled</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 
 
-    <!-- BUSINESS IMPACT -->
-    <div style="padding:60px 20px;">
-        <div style="max-width:1100px; margin:auto; text-align:center;">
-            <h2 style="color:#2b458e; font-size:26px;">
-                Business Impact
+    <!-- TECHNICAL CREDIBILITY -->
+    <div style="background:#2b458e; color:#ffffff; padding:70px 20px;">
+        <div style="max-width:1150px; margin:auto;">
+
+            <h2 style="text-align:center; margin-top:0; font-size:28px;">
+                Technical Architecture
             </h2>
-            <div style="width:90px; height:3px; background:#f47216; margin:20px auto 40px;"></div>
 
-            <div style="display:flex; flex-wrap:wrap; gap:40px;">
+            <div style="width:100px; height:3px; background:#f47216; margin:20px auto 50px;"></div>
 
-                <div style="flex:1; min-width:250px;">
-                    <h3 style="color:#2b458e;">Compliance Ready</h3>
-                    <p style="font-size:15px; line-height:1.8; color:#333;">
-                        Ensures structured IFSC-based validation aligned with Indian banking standards.
-                    </p>
-                </div>
-
-                <div style="flex:1; min-width:250px;">
-                    <h3 style="color:#2b458e;">Enterprise Control</h3>
-                    <p style="font-size:15px; line-height:1.8; color:#333;">
-                        Centralized banking master governance across multi-department environments.
-                    </p>
-                </div>
-
-                <div style="flex:1; min-width:250px;">
-                    <h3 style="color:#2b458e;">Operational Efficiency</h3>
-                    <p style="font-size:15px; line-height:1.8; color:#333;">
-                        Eliminates duplication, reduces manual errors, and improves data clarity.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <!-- TECHNICAL HIGHLIGHTS -->
-    <div style="background:#2b458e; color:#ffffff; padding:60px 20px;">
-        <div style="max-width:1100px; margin:auto;">
-            <h2 style="text-align:center; margin-top:0;">Technical Architecture</h2>
-            <div style="width:90px; height:3px; background:#f47216; margin:20px auto 40px;"></div>
-
-            <ul style="line-height:2; font-size:15px;">
+            <ul style="line-height:2.1; font-size:15px;">
                 <li>Extends res.bank model</li>
-                <li>Database-level uniqueness constraint</li>
-                <li>Computed structured display naming</li>
-                <li>Mail thread and activity mixin integration</li>
-                <li>Optimized Form and Tree view inheritance</li>
+                <li>Implements SQL uniqueness constraint</li>
+                <li>Computed display name logic</li>
+                <li>Chatter & activity mixin integration</li>
+                <li>Form & Tree view inheritance</li>
+                <li>Optimized for Odoo Enterprise & Community</li>
             </ul>
+
         </div>
     </div>
 
 
-    <!-- SUPPORT -->
-    <div style="padding:60px 20px; text-align:center;">
-        <h2 style="color:#2b458e;">Support & Customization</h2>
-        <div style="width:90px; height:3px; background:#f47216; margin:20px auto 30px;"></div>
+    <!-- ENTERPRISE POSITIONING -->
+    <div style="padding:70px 20px; text-align:center;">
+        <h2 style="color:#2b458e; font-size:28px;">
+            Designed For
+        </h2>
 
-        <p style="max-width:700px; margin:auto; font-size:15px; line-height:1.8; color:#333;">
-            For enterprise customization, IFSC API integrations,
-            RBI compliance automation, or tailored financial workflows,
+        <div style="width:100px; height:3px; background:#f47216; margin:20px auto 40px;"></div>
+
+        <p style="max-width:800px; margin:auto; font-size:16px; line-height:1.9; color:#333;">
+            Multi-branch enterprises, financial service providers,
+            accounting-intensive organizations, and ERP implementations
+            requiring structured and compliant banking data architecture.
+        </p>
+    </div>
+
+
+    <!-- CTA -->
+    <div style="background:#f4f7fc; padding:70px 20px; text-align:center;">
+        <h2 style="color:#2b458e;">Enterprise Support & Customization</h2>
+
+        <div style="width:100px; height:3px; background:#f47216; margin:20px auto 30px;"></div>
+
+        <p style="max-width:750px; margin:auto; font-size:15px; line-height:1.9; color:#333;">
+            For IFSC API validation, RBI compliance automation,
+            enterprise integration, or tailored financial workflows,
             contact our technical team.
         </p>
 
-        <div style="margin-top:30px;">
+        <div style="margin-top:35px;">
             <a href="https://www.athsoft.com/"
-               style="background:#f47216; color:#ffffff; padding:14px 30px;
-                      text-decoration:none; border-radius:6px; font-weight:600;">
+               style="background:#f47216; color:#ffffff; padding:16px 40px;
+                      text-decoration:none; border-radius:6px; font-weight:600; font-size:15px;">
                 Contact ATH Software Solutions
             </a>
         </div>
