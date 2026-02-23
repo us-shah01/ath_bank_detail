@@ -1,87 +1,112 @@
-<section style="padding:40px 20px; font-family:Arial, Helvetica, sans-serif; background-color:#f9f9f9;">
+<section style="padding:50px 20px; font-family:Arial, Helvetica, sans-serif; background:#f4f6fb;">
 
-    <div style="max-width:900px; margin:auto; background:#ffffff; padding:40px; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.06);">
+    <div style="max-width:1000px; margin:auto; background:#ffffff; padding:50px; border-radius:10px; box-shadow:0 8px 25px rgba(0,0,0,0.05);">
 
-        <h1 style="color:#714B67; margin-bottom:10px;">
-            IFSC Code and Branch for Bank Account
+        <!-- Title -->
+        <h1 style="color:#2b458e; font-size:30px; margin-bottom:10px;">
+            Branch & IFSC Management for Odoo
         </h1>
 
-        <p style="font-size:16px; color:#555; line-height:1.7;">
-            A premium enterprise solution designed to enhance banking data accuracy within Odoo.
-            This module enables intelligent <strong>IFSC Code validation</strong> and automatic 
-            <strong>Bank & Branch detail retrieval</strong>, eliminating manual errors and improving operational efficiency.
+        <div style="width:80px; height:4px; background:#f47216; margin-bottom:25px;"></div>
+
+        <p style="font-size:16px; color:#333; line-height:1.8;">
+            A robust enterprise-grade extension of Odoo’s Bank Master designed to introduce 
+            structured <strong>Branch-level banking management</strong> with enforced 
+            <strong>IFSC Code uniqueness</strong>, audit tracking, and enhanced usability.
+            <br><br>
+            Built for organizations that demand precision, traceability, and compliance 
+            in financial data management.
         </p>
 
-        <hr style="margin:30px 0; border:0; border-top:1px solid #eee;" />
+        <hr style="margin:40px 0; border:0; border-top:1px solid #e5e5e5;" />
 
-        <h2 style="color:#875A7B;">Enterprise Highlights</h2>
-        <ul style="line-height:1.8; font-size:15px; color:#444;">
-            <li> Real-time IFSC Code validation</li>
-            <li> Automatic Bank Name & Branch auto-population</li>
-            <li> Seamless integration with Odoo Bank Account forms</li>
-            <li> Reduced manual entry & operational risk</li>
-            <li> Optimized for performance and scalability</li>
+        <!-- Core Capabilities -->
+        <h2 style="color:#2b458e;">Core Capabilities</h2>
+
+        <ul style="line-height:2; font-size:15px; color:#333;">
+            <li>✔ Unique IFSC Code enforcement via SQL constraint</li>
+            <li>✔ Dedicated Branch Name field (mandatory)</li>
+            <li>✔ Intelligent Display Name format: Bank (Branch) - IFSC</li>
+            <li>✔ Integrated Chatter for full audit trail</li>
+            <li>✔ Field-level tracking (IFSC, Branch, Address, State, City)</li>
+            <li>✔ Extended Tree & Form views for structured visibility</li>
+            <li>✔ State & City-level geographical enrichment</li>
         </ul>
 
-        <hr style="margin:30px 0; border:0; border-top:1px solid #eee;" />
+        <hr style="margin:40px 0; border:0; border-top:1px solid #e5e5e5;" />
 
-        <h2 style="color:#875A7B;">Business Benefits</h2>
-        <div style="display:flex; flex-wrap:wrap; gap:20px; margin-top:15px;">
+        <!-- Enterprise Architecture -->
+        <h2 style="color:#2b458e;">Enterprise Architecture</h2>
 
-            <div style="flex:1; min-width:250px; background:#f4f4f4; padding:20px; border-radius:6px;">
-                <h3 style="color:#714B67;">Improved Accuracy</h3>
-                <p style="font-size:14px; color:#555;">
-                    Ensures reliable and verified banking information across all records.
+        <div style="display:flex; flex-wrap:wrap; gap:25px; margin-top:20px;">
+
+            <div style="flex:1; min-width:280px; padding:25px; background:#f4f6fb; border-left:4px solid #2b458e; border-radius:6px;">
+                <h3 style="color:#2b458e;">Data Integrity</h3>
+                <p style="font-size:14px; color:#333;">
+                    SQL-level uniqueness ensures no duplicate IFSC entries across the system.
                 </p>
             </div>
 
-            <div style="flex:1; min-width:250px; background:#f4f4f4; padding:20px; border-radius:6px;">
-                <h3 style="color:#714B67;">Operational Efficiency</h3>
-                <p style="font-size:14px; color:#555;">
-                    Accelerates data entry processes by eliminating repetitive manual input.
+            <div style="flex:1; min-width:280px; padding:25px; background:#f4f6fb; border-left:4px solid #f47216; border-radius:6px;">
+                <h3 style="color:#2b458e;">Audit & Traceability</h3>
+                <p style="font-size:14px; color:#333;">
+                    Full change tracking via Odoo mail.thread with activity management.
                 </p>
             </div>
 
-            <div style="flex:1; min-width:250px; background:#f4f4f4; padding:20px; border-radius:6px;">
-                <h3 style="color:#714B67;">Compliance Ready</h3>
-                <p style="font-size:14px; color:#555;">
-                    Supports Indian banking standards by validating IFSC-based records.
+            <div style="flex:1; min-width:280px; padding:25px; background:#f4f6fb; border-left:4px solid #2b458e; border-radius:6px;">
+                <h3 style="color:#2b458e;">Operational Clarity</h3>
+                <p style="font-size:14px; color:#333;">
+                    Clean display naming structure improves searchability and reporting accuracy.
                 </p>
             </div>
 
         </div>
 
-        <hr style="margin:30px 0; border:0; border-top:1px solid #eee;" />
+        <hr style="margin:40px 0; border:0; border-top:1px solid #e5e5e5;" />
 
-        <h2 style="color:#875A7B;">How It Works</h2>
-        <ol style="line-height:1.8; font-size:15px; color:#444;">
-            <li>Enter the IFSC Code within the Bank Account form.</li>
-            <li>The system validates the code instantly.</li>
-            <li>Bank and Branch details are auto-filled automatically.</li>
+        <!-- How It Works -->
+        <h2 style="color:#2b458e;">How It Works</h2>
+
+        <ol style="line-height:2; font-size:15px; color:#333;">
+            <li>Create or edit a Bank record in Odoo.</li>
+            <li>Enter the IFSC Code (system enforces uniqueness).</li>
+            <li>Provide the Branch Name and optional address details.</li>
+            <li>All changes are logged automatically in the Chatter.</li>
+            <li>The system auto-generates a structured display name.</li>
         </ol>
 
-        <hr style="margin:30px 0; border:0; border-top:1px solid #eee;" />
+        <hr style="margin:40px 0; border:0; border-top:1px solid #e5e5e5;" />
 
-        <h2 style="color:#875A7B;">Why Choose This Module?</h2>
-        <p style="font-size:15px; color:#555; line-height:1.7;">
-            Built with enterprise standards in mind, this module ensures stability, performance, 
-            and seamless integration with Odoo’s ecosystem. It is ideal for organizations 
-            handling high volumes of banking transactions and requiring precise financial records.
+        <!-- Business Impact -->
+        <h2 style="color:#2b458e;">Business Impact</h2>
+
+        <p style="font-size:15px; color:#333; line-height:1.8;">
+            This module transforms Odoo’s default Bank Master into a 
+            <strong>branch-aware, compliance-ready, enterprise banking registry</strong>.
+            <br><br>
+            Ideal for:
         </p>
 
-        <div style="margin-top:30px; padding:20px; background:#714B67; color:#ffffff; border-radius:6px;">
-            <h3 style="margin-top:0;">Support & Customization</h3>
-            <p style="margin-bottom:5px;">
-                For enterprise customization or priority support:
+        <ul style="line-height:1.9; font-size:15px; color:#333;">
+            <li>• Multi-branch enterprises</li>
+            <li>• Financial service providers</li>
+            <li>• Accounting-intensive organizations</li>
+            <li>• ERP implementations requiring structured banking data</li>
+        </ul>
+
+        <div style="margin-top:40px; padding:25px; background:#2b458e; color:#ffffff; border-radius:8px;">
+            <h3 style="margin-top:0;">Enterprise Support & Customization</h3>
+            <p style="margin-bottom:8px;">
+                Need custom banking validations, RBI integration, or automated IFSC API sync?
             </p>
             <a href="https://www.athsoft.com/" 
-               style="color:#ffffff; font-weight:bold; text-decoration:underline;" 
+               style="color:#f47216; font-weight:bold; text-decoration:none;" 
                target="_blank">
-                https://www.athsoft.com/
+                www.athsoft.com
             </a>
         </div>
 
     </div>
 
 </section>
-
