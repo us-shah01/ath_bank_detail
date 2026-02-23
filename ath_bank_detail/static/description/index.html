@@ -2,78 +2,74 @@
 
 <!-- HEADER -->
 <div style="background:#2b458e; color:#ffffff; padding:50px 20px; text-align:center;">
-    <h1 style="margin:0; font-size:30px; color:#f47216;">
-        Branch & IFSC Management for Odoo
+    <h1 style="margin:0; font-size:28px; color:#f47216;">
+        Branch and IFSC Management for Odoo
     </h1>
-    <div style="width:90px; height:3px; background:#f47216; margin:18px auto;"></div>
-    <p style="max-width:820px; margin:auto; font-size:14px; line-height:1.8; color:#ffffff;">
+    <div style="width:80px; height:3px; background:#f47216; margin:15px auto;"></div>
+    <p style="max-width:820px; margin:auto; font-size:14px; line-height:1.8;">
         Adds structured Branch details and IFSC Code management to the Odoo Bank model
         with database-level uniqueness enforcement and full change tracking.
     </p>
 </div>
 
 <!-- OVERVIEW -->
-<div style="max-width:1050px; margin:auto; padding:40px 20px;">
+<div style="max-width:1000px; margin:auto; padding:40px 20px;">
     <h2 style="color:#2b458e; margin-bottom:10px;">Overview</h2>
     <div style="width:60px; height:3px; background:#f47216; margin-bottom:20px;"></div>
 
-    <p style="font-size:14px; line-height:1.9; color:#333;">
-        This module extends the existing <strong>res.bank</strong> model in Odoo
+    <p style="font-size:14px; line-height:1.8; color:#333;">
+        This module extends the existing res.bank model in Odoo
         to introduce branch-level banking structure and mandatory IFSC Code tracking.
     </p>
 
-    <p style="font-size:14px; line-height:1.9; color:#333;">
-        It enhances the default Bank form and list views, enforces uniqueness
-        of IFSC Codes at database level through an SQL constraint,
-        and enables audit tracking using Odoo’s built-in chatter system.
+    <p style="font-size:14px; line-height:1.8; color:#333;">
+        It enhances the default Bank form and list views,
+        enforces uniqueness of IFSC Codes at database level using an SQL constraint,
+        and enables audit tracking using Odoo's built-in chatter system.
     </p>
 
-    <p style="font-size:14px; line-height:1.9; color:#333;">
+    <p style="font-size:14px; line-height:1.8; color:#333;">
         Compatible with both Odoo Community and Enterprise editions.
     </p>
 </div>
 
 <!-- KEY FEATURES -->
 <div style="background:#f5f7fb; padding:45px 20px;">
-    <div style="max-width:1050px; margin:auto;">
+    <div style="max-width:1000px; margin:auto;">
         <h2 style="color:#2b458e; text-align:center; margin-bottom:10px;">Key Features</h2>
         <div style="width:60px; height:3px; background:#f47216; margin:0 auto 35px auto;"></div>
 
-        <div style="display:flex; flex-wrap:wrap; gap:25px; justify-content:center;">
+        <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
 
-            <!-- Feature 1 -->
-            <div style="flex:1; min-width:240px; background:#ffffff; padding:25px; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.06); border-top:4px solid #2b458e;">
+            <div style="flex:1; min-width:220px; background:#ffffff; padding:20px; border-top:4px solid #2b458e; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
                 <h3 style="color:#2b458e; margin-top:0;">Unique IFSC Code</h3>
-                <p style="font-size:13px; line-height:1.8; color:#333;">
-                    SQL constraint ensures each IFSC Code is unique within the system,
-                    preventing duplicate banking records.
+                <p style="font-size:13px; line-height:1.7; color:#333;">
+                    SQL constraint ensures each IFSC Code is unique within the system
+                    and prevents duplicate banking records.
                 </p>
             </div>
 
-            <!-- Feature 2 -->
-            <div style="flex:1; min-width:240px; background:#ffffff; padding:25px; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.06); border-top:4px solid #f47216;">
-                <h3 style="color:#2b458e; margin-top:0;">Branch-Level Structure</h3>
-                <p style="font-size:13px; line-height:1.8; color:#333;">
+            <div style="flex:1; min-width:220px; background:#ffffff; padding:20px; border-top:4px solid #f47216; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+                <h3 style="color:#2b458e; margin-top:0;">Branch Level Structure</h3>
+                <p style="font-size:13px; line-height:1.7; color:#333;">
                     Mandatory Branch Name field improves organization
                     and clarity in bank master records.
                 </p>
             </div>
 
-            <!-- Feature 3 -->
-            <div style="flex:1; min-width:240px; background:#ffffff; padding:25px; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.06); border-top:4px solid #2b458e;">
+            <div style="flex:1; min-width:220px; background:#ffffff; padding:20px; border-top:4px solid #2b458e; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
                 <h3 style="color:#2b458e; margin-top:0;">Audit Tracking</h3>
-                <p style="font-size:13px; line-height:1.8; color:#333;">
+                <p style="font-size:13px; line-height:1.7; color:#333;">
                     Field-level tracking enabled using mail.thread
-                    and activity mixin integration.
+                    and mail.activity.mixin integration.
                 </p>
             </div>
 
-            <!-- Feature 4 -->
-            <div style="flex:1; min-width:240px; background:#ffffff; padding:25px; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.06); border-top:4px solid #f47216;">
+            <div style="flex:1; min-width:220px; background:#ffffff; padding:20px; border-top:4px solid #f47216; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
                 <h3 style="color:#2b458e; margin-top:0;">Structured Display Name</h3>
-                <p style="font-size:13px; line-height:1.8; color:#333;">
+                <p style="font-size:13px; line-height:1.7; color:#333;">
                     Automatically formats display name as:
-                    <strong>Bank (Branch) - IFSC</strong> for better readability.
+                    Bank (Branch) - IFSC for better readability.
                 </p>
             </div>
 
@@ -82,13 +78,13 @@
 </div>
 
 <!-- TECHNICAL DETAILS -->
-<div style="max-width:1050px; margin:auto; padding:40px 20px;">
+<div style="max-width:1000px; margin:auto; padding:40px 20px;">
     <h2 style="color:#2b458e; margin-bottom:10px;">Technical Details</h2>
     <div style="width:60px; height:3px; background:#f47216; margin-bottom:20px;"></div>
 
-    <ul style="font-size:14px; line-height:1.9; color:#333;">
-        <li>Model extended: <strong>res.bank</strong></li>
-        <li>Inheritance: <strong>mail.thread</strong> and <strong>mail.activity.mixin</strong></li>
+    <ul style="font-size:14px; line-height:1.8; color:#333;">
+        <li>Model extended: res.bank</li>
+        <li>Inheritance: mail.thread and mail.activity.mixin</li>
         <li>Database-level IFSC uniqueness constraint</li>
         <li>Computed display_name logic</li>
         <li>Form and Tree view inheritance</li>
@@ -101,10 +97,11 @@
     <h2 style="margin-top:0; color:#f47216;">Benefits</h2>
     <div style="width:60px; height:3px; background:#f47216; margin:15px auto;"></div>
 
-    <p style="max-width:820px; margin:auto; font-size:14px; line-height:1.9; color:#ffffff;">
-        Improves banking master data structure, prevents duplicate IFSC entries,
-        enhances transparency through tracking, and keeps financial records
-        well organized within Odoo.
+    <p style="max-width:800px; margin:auto; font-size:14px; line-height:1.8;">
+        Improves banking master data structure,
+        prevents duplicate IFSC entries,
+        enhances transparency through tracking,
+        and keeps financial records well organized within Odoo.
     </p>
 </div>
 
