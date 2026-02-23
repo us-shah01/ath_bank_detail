@@ -1,58 +1,85 @@
-<section>
+<section style="font-family:Arial, Helvetica, sans-serif;">
 
-    <p>
-        Enhance your Odoo Bank Management with structured branch details and enforceable IFSC Codes.
-        This module extends the default Odoo Bank model by introducing mandatory Branch support,
-        unique IFSC Code enforcement, improved naming logic, and Chatter integration for full audit tracking.
-    </p>
+    <!-- Intro -->
+    <div style="margin-bottom:25px;">
+        <p style="font-size:16px; color:#303030;">
+            <strong>Branch & IFSC Management for Odoo</strong> enhances your Bank Account master data with
+            advanced banking details such as mandatory <strong>Branch Name</strong> and unique
+            <strong>IFSC Code</strong>. This module ensures reliable banking data with strict uniqueness
+            constraints, audit trail support, and powerful display formatting.
+        </p>
+    </div>
 
-    <h2>Features</h2>
-    <ul>
-        <li>📌 Ensure unique IFSC Codes via SQL constraint for data integrity.</li>
-        <li>📌 Add and manage <strong>Branch Name</strong> directly on bank records.</li>
-        <li>📌 Auto-generate a structured display name: <strong>Bank (Branch) - IFSC</strong>.</li>
-        <li>📌 Support field tracking on IFSC, branch, state, city and other details via Chatter.</li>
-        <li>📌 Seamlessly extend the existing Odoo bank tree and form views.</li>
-        <li>📌 Improve searchability and usability with a clean structured view.</li>
+    <!-- Key Features -->
+    <h2 style="color:#2b458e; font-size:20px; margin-top:25px;">📌 Key Features</h2>
+    <ul style="margin-left:20px; font-size:15px; color:#333333; line-height:1.7;">
+        <li>✔ Enforce <strong>unique IFSC Codes</strong> to prevent duplicates via SQL constraint</li>
+        <li>✔ Add and manage <strong>Branch Name</strong> directly on Bank records</li>
+        <li>✔ Auto-generated display naming: <em>Bank (Branch) - IFSC</em></li>
+        <li>✔ Integrated chatter & activity tracking for full audit capability</li>
+        <li>✔ Field-level tracking for IFSC, branch, address, state, city</li>
+        <li>✔ Enhanced list and form views for structured bank data visibility</li>
+        <li>✔ Optional geographical details: State & City</li>
     </ul>
 
-    <h2>Configuration</h2>
-    <p>
-        After installation, go to the Bank Master (Accounting → Configuration → Banks).
-        You will now see additional fields for <strong>Branch Name</strong> and <strong>IFSC Code</strong>.
-        The IFSC field is mandatory and must be unique across all records in the system.
-        The module automatically computes and displays the bank name with branch and IFSC for clarity in lists and reports.
+    <!-- How It Works -->
+    <h2 style="color:#2b458e; font-size:20px; margin-top:25px;">🔍 How It Works</h2>
+    <p style="font-size:15px; color:#333333; line-height:1.8;">
+        This module seamlessly extends the standard Bank form. Once installed:
     </p>
-
-    <h2>How It Works</h2>
-    <ol>
-        <li>Navigate to the Bank configuration form.</li>
-        <li>Enter the IFSC Code and Branch Name.</li>
-        <li>The system validates IFSC uniqueness and raises warnings if duplicates are found.</li>
-        <li>Chatter logs and tracks all field changes for audit and traceability.</li>
-        <li>The display name is auto formatted for all list and form views.</li>
-    </ol>
-
-    <h2>Benefits</h2>
-    <ul>
-        <li>✔ Eliminate duplicate IFSC entries — perfect for multi-branch banking environments.</li>
-        <li>✔ Improve data accuracy and consistency.</li>
-        <li>✔ Track changes with full audit trails in Odoo Chatter.</li>
-        <li>✔ Enhance searchability and reporting with meaningful display names.</li>
-        <li>✔ Ideal for organizations managing large banking datasets.</li>
+    <ul style="margin-left:20px; font-size:15px; color:#333333; line-height:1.7;">
+        <li>• Go to the Bank form</li>
+        <li>• Enter the <strong>IFSC Code</strong> and ensure its uniqueness</li>
+        <li>• Add the <strong>Branch Name</strong> and optional address fields</li>
+        <li>• All changes are tracked in the chatter for audit visibility</li>
+        <li>• The display name updates to <em>Bank (Branch) – IFSC</em></li>
     </ul>
 
-    <h2>Compatibility</h2>
-    <ul>
-        <li>✔ Odoo Community and Enterprise</li>
-        <li>✔ Accounting & Bank Management related workflows</li>
-        <li>✔ Works seamlessly with existing partner bank models</li>
+    <!-- Business Benefits -->
+    <h2 style="color:#2b458e; font-size:20px; margin-top:25px;">🚀 Business Benefits</h2>
+    <ul style="margin-left:20px; font-size:15px; color:#333333; line-height:1.7;">
+        <li>• Guarantees accurate and consistent banking data across your organization</li>
+        <li>• Reduces manual errors during financial transactions</li>
+        <li>• Improves usability & searchability in Bank master views</li>
+        <li>• Enables audit logs for compliance and traceability</li>
+        <li>• Ideal for multi-branch enterprises and finance departments</li>
     </ul>
 
-    <h2>Support</h2>
-    <p>
-        For customization, integration assistance, or support, please visit:
-        <a href="https://www.athsoft.com/" target="_blank">https://www.athsoft.com/</a>
+    <!-- Compatibility -->
+    <h2 style="color:#2b458e; font-size:20px; margin-top:25px;">📦 Compatibility</h2>
+    <p style="font-size:15px; color:#222222;">
+        Compatible with Odoo 14.0 to 19.0 and seamlessly integrates with all models related to Bank
+        account, payments, invoices, and financial workflows.
     </p>
+
+    <!-- Installation -->
+    <h2 style="color:#2b458e; font-size:20px; margin-top:25px;">⚙️ Installation & Setup</h2>
+    <p style="font-size:15px; color:#333333; line-height:1.8;">
+        Simply install the module and navigate to the Bank form. New fields <em>IFSC Code</em> and
+        <em>Branch Name</em> will appear under the Bank master. No additional configuration required.
+    </p>
+
+    <!-- Notes -->
+    <h2 style="color:#2b458e; font-size:20px; margin-top:25px;">📌 Notes</h2>
+    <ul style="margin-left:20px; font-size:15px; color:#333333; line-height:1.7;">
+        <li>• IFSC Code must be unique across the system.</li>
+        <li>• Branch Name is a required field.</li>
+        <li>• Change tracking will appear in the chatter for audit history.</li>
+    </ul>
+
+    <!-- Support & Customization -->
+    <div style="margin-top:30px; padding:25px; background:#2b458e; color:#ffffff; border-radius:8px;">
+        <h3 style="margin-top:0;">💡 Support & Customization</h3>
+        <p style="font-size:15px; color:#ffffff; line-height:1.8;">
+            For enterprise support, custom enhancements (such as IFSC API integration, RBI validation,
+            automated branch mapping, or tailored banking workflows), reach out to:
+            <br><br>
+            <a href="https://www.athsoft.com/" 
+               style="color:#f47216; font-weight:bold; text-decoration:none;" 
+               target="_blank">
+                www.athsoft.com
+            </a>
+        </p>
+    </div>
 
 </section>
