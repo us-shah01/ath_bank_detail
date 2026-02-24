@@ -1,8 +1,8 @@
 {
-    'name': 'IFSC Code and Branch for Bank Account',
+    'name': 'Branch and IFSC Code for Bank Account',
     'version': "18.0.1.0.0",
     'category': 'Sales/CRM',
-    'description': "IFSC Code and Branch for Bank Account",
+    'description': "Branch and IFSC Code for Bank Account",
     'author': "Ath Software Solutions Pvt. Ltd.",
     'depends': ['base', 'mail'],
     'data': [
@@ -14,7 +14,7 @@
     'license': 'OPL-1',
     'installable': True,
     'application': True,
-    'price': 20,
-    'currency': 'USD',
+    'price': 9,
+    'currency': 'EUR',
 }
 
